@@ -6,7 +6,9 @@ const NavBar = () => {
     return (
         <>
             <nav class="navbar navbar-expand-sm bg-success navbar-dark">
+     
   <ul class="navbar-nav">
+  
     <li class="nav-item active">
       <a class="nav-link" href="#">INICIO</a>
     </li>
@@ -26,9 +28,13 @@ const NavBar = () => {
       <a class="nav-link" href="#">INGREDIENTES</a>
     </li>
   </ul>
-  <li class="nav-item active">
-  <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
-  </li>
+  <p>
+  <button type="button" class="btn btn-info">
+    <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>Comprar
+    </button>
+  </p> 
+  
+  
 </nav>
         </>
     )

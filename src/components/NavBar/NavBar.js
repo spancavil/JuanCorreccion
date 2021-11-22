@@ -5,16 +5,31 @@ import { Navbar, Container, Nav } from 'react-bootstrap';
 const NavBar = () => {
     return (
         <>
-            <Navbar bg="primary" variant="dark">
-    <Container>
-    <Navbar.Brand href="#home">Navbar</Navbar.Brand>
-    <Nav className="me-auto">
-      <Nav.Link href="#home">Home</Nav.Link>
-      <Nav.Link href="#features">Features</Nav.Link>
-      <Nav.Link href="#pricing">Pricing</Nav.Link>
-    </Nav>
-    </Container>
-  </Navbar>
+            <nav class="navbar navbar-expand-sm bg-success navbar-dark">
+  <ul class="navbar-nav">
+    <li class="nav-item active">
+      <a class="nav-link" href="#">INICIO</a>
+    </li>
+    <li class="nav-item active">
+      <a class="nav-link" href="#">ARMAS</a>
+    </li>
+    <li class="nav-item active">
+      <a class="nav-link" href="#">ARMADURAS</a>
+    </li>
+    <li class="nav-item active">
+      <a class="nav-link" href="#">LIBROS</a>
+    </li>
+    <li class="nav-item active">
+      <a class="nav-link" href="#">POCIONES</a>
+    </li>
+    <li class="nav-item active">
+      <a class="nav-link" href="#">INGREDIENTES</a>
+    </li>
+  </ul>
+  <li class="nav-item active">
+  <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
+  </li>
+</nav>
         </>
     )
 }

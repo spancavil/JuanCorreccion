@@ -1,45 +1,32 @@
-import React from 'react';
 
 
+import React, { useState } from "react";
+import "./Contador.css";
 
-/*class App extends React.Component {
-    constructor(props){
-      super(props);
-      this.state = {
-        contador : 0
-      }; 
-    }
-    onClickHandler(){
-      this.setState({
-         contador : this.state.contador+1
-      });
-    }
-    render(){
-      return (
-        <div>  
-          <Contador valor={this.state.contador}/>
-          <Button label="Add" onClick={()=>this.onClickHandler()} />
-        </div>
-      )
-    }
-  }
-*/
-  const Contador = props => {
-    return(
-      <div>
-        <h1>{props.valor}</h1>
-      </div>
-    );
-  };
-  /*const Button = props => {
-      return (
-        <button onClick={()=>props.onClick()}> {props.label}</button>
-      );
-  };
+function Counter() {
   
-  ReactDOM.render(
-    <App />,
-    document.getElementById('app')
-  )
-*/
-  export default Contador;
+  const [count, setCount] = useState(0);
+
+  
+  const handleIncrement = () => {
+    setCount(prevCount => prevCount + 1);
+  };
+
+  
+  const handleDecrement = () => {
+    setCount(prevCount => prevCount - 1);
+  };
+  return (
+    <div>
+      <div>
+      <h2>Contador</h2>
+        <button onClick={handleDecrement}>-</button>
+        <h5>Resultado es {count}</h5>
+        <button onClick={handleIncrement}>+</button>
+      </div>
+      <button onClick={() => setCount(0)}>Reset</button>
+    </div>
+  );
+}
+
+export default Counter;

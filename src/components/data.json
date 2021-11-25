@@ -1,0 +1,24 @@
+[
+    {
+"id":"1",
+        "title":"Flechas de Hierro",
+        "description":"Son las flechas más baratas",
+        "price":800,
+        "pictureurl":"https://static.wikia.nocookie.net/elderscrolls/images/d/d4/IronArrow_SK.png/revision/latest?cb=20120612172952"
+    },
+    {
+"id":"2",
+        "title":"Flechas de Acero",
+        "description":"Son mejores que las Flechas de Hierro.",
+        "price":2000,
+        "pictureurl":"https://static.wikia.nocookie.net/elderscrolls/images/3/3b/SteelArrow_SK.png/revision/latest?cb=20120612185712"
+    },
+    {
+"id":"3",
+        "title":"Flechas de Cristal",
+        "description":"Para el buen cazador.",
+        "price":5000,
+    "pictureurl":"https://static.wikia.nocookie.net/elderscrolls/images/5/59/GlassArrow_SK.png/revision/latest/top-crop/width/360/height/450?cb=20121012170108"
+    }
+
+]

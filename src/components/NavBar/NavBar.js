@@ -1,4 +1,3 @@
-
 import React from 'react';
 import './NavBar.css'
 import { Navbar, Container, Nav } from 'react-bootstrap';
@@ -28,11 +27,6 @@ const NavBar = () => {
       <a class="nav-link" href="#">INGREDIENTES</a>
     </li>
   </ul>
-  <p>
-  <button type="button" class="btn btn-info">
-    <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>Comprar
-    </button>
-  </p> 
   
   
 </nav>

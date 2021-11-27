@@ -1,13 +1,5 @@
 import React from 'react';
-import {Card} from 'react-bootstrap';
-
-
-
-
-
-
-
-
+import Item from '../Item/Item';
 
 const ItemList = ({items}) =>{
     console.log(items);
@@ -18,9 +10,6 @@ const ItemList = ({items}) =>{
             <Item key={item.id} jsonpack={item} />
 
         )}
-
-
-
         </>
 
     )
